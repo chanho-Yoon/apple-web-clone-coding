@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+html {
+	font-family : 'Nanum Gothic', sans-serif;
+	font-size   : 14px;
+}
+
+body {
+	overflow-x       : hidden;
+	color            : rgb(29, 29, 31);
+	letter-spacing   : -0.05em;
+	background-color : white;
+}
+
+p {
+	line-height : 1.6;
+}
+
+.global-nav {
+	height : 44px;
+}
+
+.global-nav,
+.local-nav {
+	padding : 0 1rem;
+}
+
+.local-nav {
+	height        : 52px;
+	border-bottom : 1px solid #ddd;
+}
+
+.global-nav-links,
+.local-nav-links {
+	display     : flex;
+	align-items : center;
+	height      : 100%;
+	margin      : 0 auto;
+	max-width   : 1000px;
+}
+
+.global-nav-links {
+	justify-content : space-between;
+}
+
+.local-nav-links {
+	justify-content : space-between;
+}
+
+.local-nav-main .product-name {
+	font-size   : 1.4rem;
+	font-weight : 800;
+}
+
+.local-nav-sub a {
+	margin-left : 2.0em;
+	font-size   : 0.8rem;
+}
+
+/* main css 부분 공통된 scroll-section 클래스 부분 */
+.scroll-section {
+	padding-top : 50vh;
+}
+
+/*--------------------section 0번 부분----------------------*/
+#scroll-section-0 h1 {
+	font-size  : 4rem;
+	text-align : center;
+}
+
+/* 공통된 message 부분 수직 수평 가운데 정렬 */
+.main-message {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	height          : 3em;
+	font-size       : 2.5rem;
+	margin          : 1px 0;
+}
+
+.main-message p {
+	line-height : 1.2;
+	font-weight : bold;
+	text-align  : center;
+}
+
+/*---------------section 1번 부분---------------------------*/
+.description {
+	padding   : 0 1rem;
+	font-size : 1.2rem;
+	color     : #888;
+}
+
+.description strong {
+	float        : left;
+	margin-right : 0.2em;
+	font-size    : 3rem;
+	color        : rgb(29, 29, 31);
+}
+
+/*---------------section 2번 부분---------------------------*/
+#scroll-section-2 .main-message small {
+	display       : block;
+	font-size     : 1.2rem;
+	margin-bottom : 0.5em;
+}
+
+#scroll-section-2 .main-message {
+	font-size : 3.5rem;
+}
+
+.desc-message {
+	width       : 50%;
+	font-weight : 800;
+}
+
+.pin {
+	width            : 1px;
+	height           : 100px;
+	background-color : rgb(29, 29, 31);
+}
+
+/*---------------section 3번 부분---------------------------*/
+.mid-message {
+	padding   : 0 1rem;
+	font-size : 2rem;
+	color     : #888;
+}
+
+.mid-message strong {
+	color : rgb(29, 29, 31);
+}
+
+.canvas-caption {
+	padding    : 0 1rem;
+	color      : #888;
+	text-align : left;
+	font-size  : 1.2rem;
+}
+
+/*---------------footer 부분---------------------------*/
+.footer {
+	display          : flex;
+	align-items      : center;
+	justify-content  : center;
+	height           : 7rem;
+	background-color : #ee791d;
+}
+
+/*---------------데스크탑버전 media query---------------------------*/
+@media (min-width : 1024px) {
+	/* section 0 */
+	#scroll-section-0 h1 {
+		font-size : 9vw;
+	}
+
+	.main-message {
+		font-size : 4vw;
+	}
+
+	/* section 1 */
+	.description strong {
+		font-size : 6rem;
+	}
+
+	.description {
+		font-size : 2rem;
+	}
+
+	/* section 2 */
+	#scroll-section-2 .main-message {
+		font-size : 6vw;
+	}
+
+	#scroll-section-2 .main-message small {
+		font-size : 1.5vw;
+	}
+
+	.desc-message {
+		width : 20%;
+	}
+
+	/*	section 3 */
+	.mid-message {
+		font-size : 4vw;
+	}
+
+	.canvas-caption {
+		font-size : 2rem;
+	}
+}
+
+/* max-width, margin 공통 속성 사용하는 클래스들 */
+.canvas-caption, .description, .mid-message {
+	max-width : 1000px;
+	margin    : 0 auto;
+}
+
+/* sticky 공통된 부분 */
+.sticky-elem {
+	display  : none;
+	position : fixed;
+	top      : 0;
+	left     : 0;
+	width    : 100%;
+}
+
+/* section animation 0 1 2 3 공통된 부분 */
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem {
+	display: block;
+}
+
+
+/* section animation 0 부분 */
+#show-scene-0 #scroll-section-0 .sticky-elem {
+
+}
+
+/* section animation 1 부분 */
+#show-scene-1 #scroll-section-1 .sticky-elem {
+
+}
+
+/* section animation 2 부분 */
+#show-scene-2 #scroll-section-2 .sticky-elem {
+
+}
+
+/* section animation 3 부분 */
+#show-scene-3 #scroll-section-3 .sticky-elem {
+
+}
