@@ -16,7 +16,7 @@ p {
 	line-height : 1.6;
 }
 
-.global-nav {
+.global-nav, #global-nav {
 	height : 44px;
 }
 
@@ -60,6 +60,7 @@ p {
 /* main css 부분 공통된 scroll-section 클래스 부분 */
 .scroll-section {
 	padding-top : 50vh;
+	border: 3px solid red;
 }
 
 /*--------------------section 0번 부분----------------------*/
