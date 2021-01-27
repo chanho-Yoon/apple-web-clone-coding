@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html {
-	font-family : 'Nanum Gothic', sans-serif;
+	font-family : 'Noto Sans KR', sans-serif;
 	font-size   : 14px;
 }
 
@@ -16,18 +16,24 @@ p {
 	line-height : 1.6;
 }
 
-.global-nav, #global-nav {
-	height : 44px;
-}
-
 .global-nav,
 .local-nav {
-	padding : 0 1rem;
+	padding  : 0 1rem;
+	position : absolute;
+	width    : 100%;
+	left     : 0;
+}
+
+.global-nav {
+	height : 44px;
+	width  : 100%;
+	top    : 0;
 }
 
 .local-nav {
 	height        : 52px;
 	border-bottom : 1px solid #ddd;
+	top           : 45px;
 }
 
 .global-nav-links,
@@ -60,7 +66,7 @@ p {
 /* main css 부분 공통된 scroll-section 클래스 부분 */
 .scroll-section {
 	padding-top : 50vh;
-	border: 3px solid red;
+	border      : 3px solid red;
 }
 
 /*--------------------section 0번 부분----------------------*/
@@ -77,6 +83,7 @@ p {
 	height          : 3em;
 	font-size       : 2.5rem;
 	margin          : 1px 0;
+	opacity: 0;
 }
 
 .main-message p {
@@ -110,9 +117,9 @@ p {
 	font-size : 3.5rem;
 }
 
-.desc-message {
-	width       : 50%;
-	font-weight : 800;
+.sticky-elem.desc-message {
+	width       : 20%;
+	font-weight : bold;
 }
 
 .pin {
@@ -202,7 +209,6 @@ p {
 	display  : none;
 	position : fixed;
 	top      : 0;
-	left     : 0;
 	width    : 100%;
 }
 
@@ -210,8 +216,8 @@ p {
 #show-scene-0 #scroll-section-0 .sticky-elem,
 #show-scene-1 #scroll-section-1 .sticky-elem,
 #show-scene-2 #scroll-section-2 .sticky-elem,
-#show-scene-3 #scroll-section-3 .sticky-elem {
-	display: block;
+#show-scene-3 #scroll-section-3 .sticky-elem  {
+	display : block;
 }
 
 
