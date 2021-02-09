@@ -83,7 +83,8 @@ p {
 	height          : 3em;
 	font-size       : 2.5rem;
 	margin          : 1px 0;
-	opacity: 0;
+	opacity         : 0;
+	top             : 35vh;
 }
 
 .main-message p {
@@ -126,6 +127,16 @@ p {
 	width            : 1px;
 	height           : 100px;
 	background-color : rgb(29, 29, 31);
+}
+
+#scroll-section-2 .b {
+	top  : 10%;
+	left : 40%;
+}
+
+#scroll-section-2 .c {
+	top  : 15%;
+	left : 45%;
 }
 
 /*---------------section 3번 부분---------------------------*/
@@ -188,6 +199,15 @@ p {
 		width : 20%;
 	}
 
+	#scroll-section-2 .b {
+		top  : 20%;
+		left : 53%;
+	}
+
+	#scroll-section-2 .c {
+		left : 55%;
+	}
+
 	/*	section 3 */
 	.mid-message {
 		font-size : 4vw;
@@ -208,7 +228,6 @@ p {
 .sticky-elem {
 	display  : none;
 	position : fixed;
-	top      : 0;
 	width    : 100%;
 }
 
@@ -216,7 +235,7 @@ p {
 #show-scene-0 #scroll-section-0 .sticky-elem,
 #show-scene-1 #scroll-section-1 .sticky-elem,
 #show-scene-2 #scroll-section-2 .sticky-elem,
-#show-scene-3 #scroll-section-3 .sticky-elem  {
+#show-scene-3 #scroll-section-3 .sticky-elem {
 	display : block;
 }
 
